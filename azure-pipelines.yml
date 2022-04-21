@@ -22,5 +22,7 @@ steps:
       titanium sdk install
       echo step2
       titanium sdk install 10.1.1.GA
+      echo step3
       titanium sdk install 10.1.1.GA --force
-       
+      echo step4
+      ti create --import --no-services
