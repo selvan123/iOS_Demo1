@@ -18,5 +18,6 @@ steps:
       echo Hello  
       
       npm install -g titanium
+      titanium sdk install --default
       ti create --import --no-services
  
