@@ -18,6 +18,10 @@ steps:
       echo Hello  
       
       npm install -g titanium
-      titanium sdk install --branch master --default
+      echo step1  
+      titanium sdk install --branch 3_0_X --default
+      echo step2
+      npm install git://github.com/appcelerator/titanium.git -g
+      echo step3
       ti create --import --no-services
  
