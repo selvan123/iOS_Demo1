@@ -19,9 +19,8 @@ steps:
       
       npm install -g titanium
       echo step1  
-      titanium sdk install --branch 3_0_X --default
+      titanium sdk install
       echo step2
-      npm install git://github.com/appcelerator/titanium.git -g
-      echo step3
-      ti create --import --no-services
- 
+      titanium sdk install 10.1.1.GA
+      titanium sdk install 10.1.1.GA --force
+       
