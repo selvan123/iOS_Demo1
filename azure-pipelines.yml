@@ -17,12 +17,12 @@ steps:
       
       echo Hello  
       
-      npm install -g titanium
+      npm install -g npm
       echo step1  
-      npm install -g git://github.com/appcelerator/titanium.git
+      npm install titanium -g
       echo step2
-      titanium setup
+      npm install -g git://github.com/appcelerator/titanium.git
       echo step3  
-      titanium sdk install
+      ti sdk install 
       echo step4  
-      titanium sdk install 10.1.1.GA
+      ti sdk select 10.1.1.GA
