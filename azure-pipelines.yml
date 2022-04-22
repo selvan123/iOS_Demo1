@@ -16,8 +16,8 @@ steps:
  
       
       echo Hello  
-      npm install titanium -g
-
+      
+      echo step0
       npm install -g npm
       echo step1  
       npm install titanium -g
