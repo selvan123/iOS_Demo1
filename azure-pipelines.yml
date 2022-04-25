@@ -18,7 +18,8 @@ steps:
       echo Hello  
       
       echo step0
-      jenv default java 11.0.11
+      version-map:
+        java: "11.0.11"
       echo step1
       npm install -g npm
       echo step3
