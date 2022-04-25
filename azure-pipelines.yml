@@ -31,7 +31,3 @@ steps:
       ti sdk install 
       echo step6
       ti sdk select 10.1.1.GA
-      echo step7
-      JavaToolInstaller@0inputs:versionSpec: '11' jdkArchitectureOption: 'x64' jdkSourceOption: 'PreInstalled'
-      echo step8
-      ti build -p android -b
