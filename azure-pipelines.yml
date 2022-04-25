@@ -22,10 +22,14 @@ steps:
       echo step1  
       npm install titanium -g
       echo step2
+      npm install -g n
+      echo step3
+      n 14
+      echo step4
       npm install -g git://github.com/appcelerator/titanium.git
-      echo step3  
+      echo step5 
       ti sdk install 
-      echo step4  
+      echo step6  
       ti sdk select 10.1.1.GA
-      echo step5
+      echo step7
       ti build -p android -b
