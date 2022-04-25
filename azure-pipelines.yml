@@ -18,18 +18,20 @@ steps:
       echo Hello  
       
       echo step0
+      java version "11.0.11"
+      echo step1
       npm install -g npm
-      echo step1  
-      npm install titanium -g
-      echo step2
-      npm install -g n
       echo step3
-      n 14
+      npm install titanium -g
       echo step4
+      npm install -g n
+      echo step5
+      n 14
+      echo step6
       npm install -g git://github.com/appcelerator/titanium.git
-      echo step5 
-      ti sdk install 
-      echo step6  
-      ti sdk select 10.1.1.GA
       echo step7
+      ti sdk install 
+      echo step8 
+      ti sdk select 10.1.1.GA
+      echo step9
       ti build -p android -b
