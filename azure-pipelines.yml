@@ -28,4 +28,4 @@ steps:
       echo step4  
       ti sdk select 10.1.1.GA
       echo step5
-      ti build -p ios -b
+      ti build -p android -b
