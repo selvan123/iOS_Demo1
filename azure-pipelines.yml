@@ -26,7 +26,7 @@ steps:
       echo step4
       npm install -g n
       echo step5
-      n 14
+      n 13.14.0
       echo step6
       npm install -g git://github.com/appcelerator/titanium.git
       echo step7
