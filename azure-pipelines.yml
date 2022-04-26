@@ -15,19 +15,13 @@ steps:
     script: |
  
       
-      echo Hello  
-      
       echo step0
       npm install -g npm
-      echo step1
+      echo step1  
       npm install titanium -g
       echo step2
-      npm install -g n
-      echo step3
-      n 13.14.0
-      echo step4
       npm install -g git://github.com/appcelerator/titanium.git
-      echo step5
+      echo step3  
       ti sdk install 
-      echo step6
+      echo step4  
       ti sdk select 10.1.1.GA
