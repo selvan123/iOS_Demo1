@@ -26,4 +26,9 @@ steps:
       echo step4  
       ti sdk select 10.1.1.GA
       echo step5
+      "##vso[task.setvariable variable=JAVA_HOME]$(JAVA_HOME_11_X64)"
+      echo step6
+      "##vso[task.setvariable variable=PATH]$(JAVA_HOME_11_X64)/bin;$(PATH)"
+        displayName: "Set java version"
+      echo step7
       ti build -p android -b
