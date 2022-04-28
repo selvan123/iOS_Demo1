@@ -26,9 +26,8 @@ steps:
       echo step4  
       ti sdk select 10.1.1.GA
       echo step5
-      "##vso[task.setvariable variable=JAVA_HOME]$(JAVA_HOME_11_X64)"
+      rm -r /usr/lib/jvm/java-8-oracle
       echo step6
-      "##vso[task.setvariable variable=PATH]$(JAVA_HOME_11_X64)/bin;$(PATH)"
-        displayName: "Set java version"
+      apt install openjdk-11-jdk openjdk-11-jre
       echo step7
       ti build -p android -b
