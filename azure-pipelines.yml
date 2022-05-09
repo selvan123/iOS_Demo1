@@ -18,12 +18,4 @@ steps:
  
       
       echo step0
-      npm install -g npm
-      echo step1  
-      npm install titanium -g
-      echo step2
-      npm install -g git://github.com/appcelerator/titanium.git
-      echo step3  
-      ti sdk install 
-      echo step4  
-      ti sdk select 10.1.1.GA
+      xcodebuild -project /Users/m1052070/Desktop/KitchenSink/build/iphone/KitchenSink.xcodeproj -scheme KitchenSink -archivePath /Users/m1052070/Desktop/KitchenSink archive
