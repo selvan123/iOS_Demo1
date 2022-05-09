@@ -7,7 +7,9 @@ trigger:
 - master
 
 pool:
-  vmImage: A2ML45187M
+  name: Default
+  demands:
+   - agent.name -equals A2ML45187M
   
 
 
