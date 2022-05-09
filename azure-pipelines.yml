@@ -7,9 +7,9 @@ trigger:
 - master
 
 pool:
-  vmImage: Default
+  name: Default
   demands:
-  - agent.os -equals Darwin
+  - agent.os -equals A2ML45187M
 
 steps:
 - task: CmdLine@2
