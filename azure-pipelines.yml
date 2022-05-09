@@ -7,9 +7,8 @@ trigger:
 - master
 
 pool:
-  vmImage: A2ML45187M
-  demands: 
-    - agent.os -equals kitchensinkagent
+  vmImage: kitchensinkagent
+
   
   
 
