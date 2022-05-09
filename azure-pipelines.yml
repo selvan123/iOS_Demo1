@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: macOS-latest
+  vmImage: A2ML45187M
   demands: 
     - agent.os -equals Darwin
   
