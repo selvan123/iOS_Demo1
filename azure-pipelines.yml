@@ -9,7 +9,7 @@ trigger:
 pool:
   vmImage: Default
   demands:
-  - agent.os -equals A2ML45187M
+  - agent.os -equals Darwin
 
 steps:
 - task: CmdLine@2
