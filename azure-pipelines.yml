@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: Default
+  vmImage: macOS-latest
   demands:
    - agent.name -equals A2ML45187M
   
