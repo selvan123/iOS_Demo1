@@ -7,10 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: kitchensinkagent
-
-  
-  
+  vmImage: A2ML45187M
 
 
 steps:
