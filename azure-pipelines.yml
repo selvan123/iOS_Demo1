@@ -9,7 +9,7 @@ trigger:
 pool:
   vmImage: A2ML45187M
   demands: 
-    - agent.os -equals Darwin
+    - agent.os -equals kitchensinkagent
   
   
 
