@@ -6,7 +6,10 @@
 trigger:
 - master
 
-pool: Default
+pool:
+  vmImage: Default
+  demands:
+  - agent.os -equals A2ML45187M
   
 
 
