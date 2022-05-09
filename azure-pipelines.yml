@@ -8,8 +8,6 @@ trigger:
 
 pool:
   vmImage: macOS-latest
-  demands:
-   - agent.name -equals A2ML45187M
   
 
 
