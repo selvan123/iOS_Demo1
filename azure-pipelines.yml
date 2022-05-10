@@ -18,4 +18,4 @@ steps:
  
       
       echo step0
-      ti build --platform android --deploy-type production --target dist-playstore --android-sdk "/Users/m1052070/Library/Android/sdk" --output-dir "/Users/m1052070/Desktop/output" --keystore "/Users/m1052070/Desktop/Keystore.jks"
+      ti build --platform android --deploy-type production --target dist-playstore --android-sdk "/Users/m1052070/Library/Android/sdk" --output-dir "/Users/m1052070/Desktop/output" --keystore "/Users/m1052070/Desktop/CartusKeystore.jks"
