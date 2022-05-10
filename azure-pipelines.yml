@@ -18,4 +18,4 @@ steps:
  
       
       echo step0
-      xcodebuild -project /Users/m1052070/Desktop/KitchenSink/build/iphone/KitchenSink.xcodeproj -scheme KitchenSink -archivePath /Users/m1052070/Desktop/KitchenSink archive
+      xcodebuild -project /Users/m1052070/Desktop/CartusMobile_Alloy_Mar2022/build/iphone/CartusMobileDev.xcodeproj -scheme CartusMobileDev  -archivePath /Users/m1062228/Desktop/CartusMobileApp.xcarchive archive
