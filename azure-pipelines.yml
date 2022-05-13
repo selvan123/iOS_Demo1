@@ -18,7 +18,4 @@ steps:
  
       
       echo step0
-      ti build --project-dir /Users/m1052070/Desktop/CartusMobile_Alloy_Mar2022 --platform android --target dist-playstore --android-sdk /Users/m1052070/Library/Android/sdk --output-dir /Users/m1052070/Desktop/output --keystore /Users/m1052070/Desktop/CartusKeystore.jks --alias cartusmobile --store-password 0X1D1ct10n
-- task: AndroidSigning@3
-  inputs:
-    apkFiles: '**/*.apk'
+      xcodebuild -project /Users/m1052070/Desktop/CartusMobile_Alloy_Mar2022/build/iphone/CartusMobileDev.xcodeproj -scheme CartusMobileDev  -archivePath /Users/m1062228/Desktop/CartusMobileApp.xcarchive archive
