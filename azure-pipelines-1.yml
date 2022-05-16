@@ -24,5 +24,3 @@ steps:
       ti sdk install
       echo step4
       ti sdk select 10.1.1.GA
-
-
