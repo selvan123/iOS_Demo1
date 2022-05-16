@@ -8,13 +8,13 @@ trigger:
 
 pool:
   vmImage: 'macOS-latest'
+  demands: xcode
 
  
 steps:
 - task: CmdLine@2
   inputs:
     script: |
-      
       echo step0
       npm install -g npm
       echo step1 
