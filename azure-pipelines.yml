@@ -25,4 +25,12 @@ steps:
       ti sdk install
       echo step4 
       ti sdk select 10.1.1.GA
+- task: Xcode@5
+  displayName: 'Build app using Xcode'
+  inputs:
+    actions: 'build'
+    sdk: 'iphoneos'
+    scheme: 'KitchenSink'
+    configuration: 'Debug'
+    xcWorkspacePath: '**/*.xcodeproj/KitchenSink.xcodeproj'
  
