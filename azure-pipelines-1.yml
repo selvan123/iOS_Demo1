@@ -7,13 +7,22 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'macOS-latest'
+  demands: xcode
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo step0
+      npm install -g npm
+      echo step1
+      npm install titanium -g
+      echo step2
+      npm install -g git://github.com/appcelerator/titanium.git
+      echo step3
+      ti sdk install
+      echo step4
+      ti sdk select 10.1.1.GA
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+
