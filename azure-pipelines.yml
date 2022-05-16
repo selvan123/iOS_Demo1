@@ -7,15 +7,22 @@ trigger:
 - master
 
 pool:
-  name: Default
-  demands: xcode
+  vmImage: 'macOS-latest'
 
-
+ 
 steps:
 - task: CmdLine@2
   inputs:
     script: |
- 
       
       echo step0
-      xcodebuild -project /Users/m1052070/Desktop/CartusMobile_Alloy_Mar2022/build/iphone/CartusMobileDev.xcodeproj -scheme CartusMobileDev  -archivePath /Users/m1062228/Desktop/CartusMobileApp.xcarchive archive
+      npm install -g npm
+      echo step1 
+      npm install titanium -g
+      echo step2
+      npm install -g git://github.com/appcelerator/titanium.git
+      echo step3 
+      ti sdk install
+      echo step4 
+      ti sdk select 10.1.1.GA
+ 
