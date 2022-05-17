@@ -32,5 +32,5 @@ steps:
     sdk: 'iphoneos'
     scheme: 'KitchenSink'
     configuration: 'Debug'
-    xcWorkspacePath: '**/*.xcodeproj/KitchenSink.xcodeproj'
+    xcWorkspacePath: '__MACOSX/kitchensink/build/iphone/._KitchenSink.xcodeproj'
  
