@@ -23,8 +23,6 @@ steps:
       npm install -g git://github.com/appcelerator/titanium.git
       echo step3 
       ti sdk install 10.1.1.GA
-      echo step4 
-      titanium setup
       
 - task: Xcode@5
   displayName: 'Build app using Xcode'
