@@ -22,7 +22,7 @@ steps:
       echo step2
       npm install -g git://github.com/appcelerator/titanium.git
       echo step3 
-      ti sdk install 10.1.1.GA --force
+      ti sdk install 10.1.1.GA
       echo step4 
       titanium setup
       
