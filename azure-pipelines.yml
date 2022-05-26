@@ -7,30 +7,32 @@ trigger:
 - master
 
 pool:
+  name: Azure Pipelines
   vmImage: 'macOS-latest'
   demands: xcode
 
  
 steps:
+- task: NodeTool@0
+  displayName: 'Use Node 14.x'
+  inputs:
+    versionSpec: 14.19.3
+
+
 - task: CmdLine@2
   inputs:
     script: |
-      echo step0
+    
       npm install -g npm
-      echo step1 
+      echo step1
       npm install titanium -g
       echo step2
+      npm install alloy -g
       npm install -g git://github.com/appcelerator/titanium.git
-      echo step3 
-      ti sdk install 10.1.1.GA
-      
-- task: Xcode@5
-  displayName: 'Build app using Xcode'
-  inputs:
-    actions: 'build'
-    sdk: 'iphoneos'
-    scheme: 'KitchenSink'
-    configuration: 'Debug'
-    xcWorkspacePath: '**/KitchenSink.xcodeproj'
+      echo step3
+      ti sdk install
+      ti sdk select 10.1.1.GA
+      echo step 5
+      ti build -p ios -b
 
  
