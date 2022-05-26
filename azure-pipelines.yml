@@ -18,6 +18,17 @@ steps:
   inputs:
     versionSpec: 14.19.3
 
+- task: InstallAppleCertificate@2
+  inputs:
+    certSecureFile: '$(Certificatesp12)'
+    certPwd: 'Cartus01'
+    keychain: 'temp'
+    
+- task: InstallAppleProvisioningProfile@1
+  inputs:
+   provisioningProfileLocation: 'secureFiles'
+   provProfileSecureFile: '$(provisioningProfile)'
+   removeProfile: true
 
 - task: CmdLine@2
   inputs:
@@ -35,4 +46,21 @@ steps:
       echo step 5
       ti build -p ios -b
 
- 
+- task: Xcode@5
+  inputs:
+   actions: 'build'
+   scheme: 'CartusMobileDev'
+   sdk: 'iphoneos'
+   configuration: 'Release'
+   xcWorkspacePath: '**/{{projectName}}.xcworkspace'
+   xcodeVersion: 'default'
+   packageApp: true
+   signingOption: 'manual'
+   signingIdentity: '$(APPLE_CERTIFICATE_SIGNING_IDENTITY)'
+   provisioningProfileUuid: '$(APPLE_PROV_PROFILE_UUID)'
+
+- task: CopyFiles@2
+  inputs:
+    Contents: '**/*.ipa'
+    targetFolder: 'drop/$(Configuration)_ios'
+    overWrite: true
