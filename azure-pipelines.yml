@@ -20,9 +20,10 @@ steps:
     script: |
       # Write your commands here
       
-      echo 'Hello world'
+      echo 'All files'
       ls
-      find . -name 'a*.*'
+      echo 'All xml files'
+      find . -name '*.xml'
 
 # - task: CmdLine@2
 #   inputs:
