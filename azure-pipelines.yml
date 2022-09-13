@@ -22,7 +22,7 @@ steps:
       
       echo 'Hello world'
       ls
-      find . -n a*.*
+      find . -name a*.*
 
 # - task: CmdLine@2
 #   inputs:
