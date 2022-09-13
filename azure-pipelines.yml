@@ -13,11 +13,22 @@ pool:
 
  
 steps:
-- task: CmdLine@2
+
+- task: Bash@3
   inputs:
+    targetType: 'inline'
     script: |
-             brew install java11
-             java -version
+      # Write your commands here
+      
+      echo 'Hello world'
+      ls
+      find . -n a*.*
+
+# - task: CmdLine@2
+#   inputs:
+#     script: |
+#              brew install java11
+#              java -version
 # - task: NodeTool@0
 #   displayName: 'Use Node 14.x'
 #   inputs:
